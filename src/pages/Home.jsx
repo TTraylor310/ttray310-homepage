@@ -1,10 +1,11 @@
 // import { Link } from 'react-router-dom'
+import PastProjects from '../components/PastProjects'
 import Skills from '../components/Skills'
 
 const Home = () => {
   return (
     <div>
-      <div className='text-2xl px-2'>Homepage Things</div>
+      <PastProjects />
       <Skills />
     </div>
   )

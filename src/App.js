@@ -14,11 +14,9 @@ const App = () => {
   return (
     <div className='bg-violet-200'>
 
-      <h1 className='text-4xl'>Homepage</h1>
-
       <Router>
 
-        <div className='flex'>
+        <div className='flex items-center justify-between shadow-md bg-deepBlue p-5'>
           <Contact />
           <Header />
         </div>
@@ -28,7 +26,7 @@ const App = () => {
           <Route path='/work-history' element={<WorkHistory />} />
         </Routes>
 
-        <div className="flex">
+        <div className="min-w-max px-3 pt-3 mb-0 ">
           <Footer />
         </div>
 

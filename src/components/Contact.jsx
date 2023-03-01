@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <div>
-      <button onClick={openModal} className="text-3xl font-sans">
+      <button onClick={openModal} className="pl-5 text-2xl text-white">
         Contact Me
       </button>
 

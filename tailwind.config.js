@@ -6,9 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        deepBlue: '#041f60'
+        deepBlue: '#041f60',
+        lightBlue: '#2D61DD',
       },
-      
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
