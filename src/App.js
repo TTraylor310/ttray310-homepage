@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
+import Contact from './components/Contact'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -18,6 +19,7 @@ const App = () => {
       <Router>
 
         <div className='flex'>
+          <Contact />
           <Header />
         </div>
 
