@@ -6,6 +6,9 @@ import {
   SiExpress,
   SiNetlify,
   SiHeroku,
+  SiPostgresql,
+  SiMongodb,
+  SiSqlite
 } from 'react-icons/si'
 
 const Skills = () => {
@@ -31,12 +34,21 @@ const Skills = () => {
         </div>
       </div>
 
-      <div id='tools-platforms' className='text-5xl font-style: italic'>
+      <div id='tools-platforms-container' className='text-5xl font-style: italic'>
         Tools and Platforms
         <div id='tools-platforms-individual' className='text-4xl flex'>
           <FaGithub />
           <SiNetlify />
           <SiHeroku />
+        </div>
+      </div>
+
+      <div id='database-container' className='text-5xl font-style: italic'>
+        Database
+        <div id='database-individual' className='text-4xl flex'>
+          <SiPostgresql />
+          <SiMongodb />
+          <SiSqlite />
         </div>
       </div>
     </div>
