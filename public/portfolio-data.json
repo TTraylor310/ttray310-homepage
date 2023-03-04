@@ -1,0 +1,126 @@
+{
+  "Basic-info": {
+    "name": "Tim Traylor",
+    "tag-line": "Software Developer",
+    "social-links": [
+      {
+        "name": "github",
+        "url": "http://github.com/ttraylor310"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "http://linkedin.com/in/ttraylor310"
+      }
+    ],
+    "pics": ["images/personal/cheesin.jpg", "images/personal/TandG.jpg"]
+  },
+  "projects": [
+    {
+      "title": "Library of Things",
+      "description": "Find items in your community from real people. Share your own items that you think someone else may find useful. Use it to share your interests and meet new people.",
+      "images": [
+        "images/projects/library-of-things/landing-page.png",
+        "images/projects/library-of-things/browsing-page.png",
+        "images/projects/library-of-things/profile-page.png"
+      ],
+      "url": "https://library-of-things.vercel.app/",
+      "github-link": "https://github.com/TTraylor310/library-of-things",
+      "technologies": {
+        "languages": [
+          {
+            "icon": "SiJavascript",
+            "name": "JavaScript"
+          },
+          {
+            "icon": "FaCss3Alt",
+            "name": "CSS 3"
+          }
+        ],
+        "tools": [
+          {
+            "icon": "FaReact",
+            "name": "React"
+          },
+          {
+            "icon": "TbBrandNextjs",
+            "name": "NEXT.js"
+          },
+          {
+            "icon": "SiSupabase",
+            "name": "Supabase"
+          }
+        ],
+        "database": ""
+      }
+    },
+    {
+      "title": "ticketTracker",
+      "description": "Application framework to allow for user to create profile, create help tickets for specific hardware, and provides notes for each item.",
+      "images": [
+        "images/projects/ticket-tracker/tracking-home.png",
+        "images/projects/ticket-tracker/ticket-new.png",
+        "images/projects/ticket-tracker/my-tickets.png",
+        "images/projects/ticket-tracker/ticket-details.png"
+      ],
+      "url": "https://ticket-tracker-c06x.onrender.com/",
+      "github-link": "https://github.com/TTraylor310/tracker-tray",
+      "technologies": {
+        "languages": [
+          {
+            "icon": "SiJavascript",
+            "name": "JavaScript"
+          },
+          {
+            "icon": "FaCss3Alt",
+            "name": "CSS 3"
+          }
+        ],
+        "tools": [
+          {
+            "icon": "FaReact",
+            "name": "React"
+          },
+          {
+            "icon": "SiRedux",
+            "name": "Redux toolkit"
+          }
+        ],
+        "database": [
+          {
+            "icon": "SiMongodb",
+            "name": "MongoDB"
+          }
+        ]
+      }
+    },
+    {
+      "title": "",
+      "description": "",
+      "images": [
+        ""
+      ],
+      "url": "",
+      "github-link": "",
+      "technologies": {
+        "languages": [
+          {
+            "icon": "",
+            "name": ""
+          }
+        ],
+        "tools": [
+          {
+            "icon": "",
+            "name": ""
+          }
+        ],
+        "database": [
+          {
+            "icon": "",
+            "name": ""
+          }
+        ]
+      }
+    }
+  ]
+}

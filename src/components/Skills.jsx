@@ -1,3 +1,5 @@
+import { BsFillBootstrapFill } from 'react-icons/bs'
+import { TbBrandNextjs } from 'react-icons/tb'
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub } from 'react-icons/fa'
 import {
   SiJavascript,
@@ -8,7 +10,8 @@ import {
   SiHeroku,
   SiPostgresql,
   SiMongodb,
-  SiSqlite
+  SiSqlite,
+  SiSupabase
 } from 'react-icons/si'
 
 const Skills = () => {
@@ -21,6 +24,7 @@ const Skills = () => {
           <FaHtml5 />
           <FaCss3Alt />
           <SiTailwindcss />
+          <BsFillBootstrapFill />
         </div>
       </div>
 
@@ -34,7 +38,10 @@ const Skills = () => {
         </div>
       </div>
 
-      <div id='tools-platforms-container' className='text-5xl font-style: italic'>
+      <div
+        id='tools-platforms-container'
+        className='text-5xl font-style: italic'
+      >
         Tools and Platforms
         <div id='tools-platforms-individual' className='text-4xl flex'>
           <FaGithub />
