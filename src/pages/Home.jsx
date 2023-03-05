@@ -5,8 +5,8 @@ import Skills from '../components/Skills'
 const Home = () => {
   return (
     <div>
-      <PastProjects />
       <Skills />
+      <PastProjects />
     </div>
   )
 }
