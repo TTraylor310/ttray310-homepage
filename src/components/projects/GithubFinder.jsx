@@ -22,20 +22,20 @@ const customStyles = {
   },
 };
 
-const TicketTracker = () => {
+const GithubFinder = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const openModal = () => setModalIsOpen(true)
   const closeModal = () => setModalIsOpen(false)
 
   return (
-    <div id='ticket-tracker'>
+    <div id='github-finder'>
       <div className='max-w-md'>
         <img
-          src='../images/projects/ticket-tracker/tracking-home.png'
-          alt='Ticket Tracker website pictures'
+          src='../images/projects/github-finder/landing-page.png'
+          alt='Github Finder website pictures'
           onClick={openModal}
         />
-        <p className='text-center'>Ticket Tracker</p>
+        <p className='text-center'>GithubFinder</p>
       </div>
 
       <Modal
@@ -45,7 +45,7 @@ const TicketTracker = () => {
       >
         <div className=''>
           <button onClick={closeModal}>X</button>
-          <h3 className='text-center'>Ticket Tracker</h3>
+          <h3 className='text-center'>GithubFinder</h3>
 
           <Swiper
             slidesPerView={1}
@@ -54,7 +54,7 @@ const TicketTracker = () => {
             loop={true}
             autoplay={{
               delay: 1000,
-              disableOnInteraction: false,
+              disableOnInteraction: true,
             }}
             pagination={{
               clickable: true,
@@ -65,38 +65,31 @@ const TicketTracker = () => {
           >
             <SwiperSlide>
               <img
-                src='../images/projects/ticket-tracker/tracking-home.png'
+                src='../images/projects/github-finder/landing-page.png'
                 alt=''
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src='../images/projects/ticket-tracker/ticket-new.png'
+                src='../images/projects/github-finder/profile-page.png'
                 alt=''
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src='../images/projects/ticket-tracker/my-tickets.png'
-                alt=''
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src='../images/projects/ticket-tracker/ticket-details.png'
+                src='../images/projects/github-finder/search-results.png'
                 alt=''
               />
             </SwiperSlide>
           </Swiper>
 
           <p className='pt-10'>
-            Application framework to allow for user to create profile, create
-            help tickets for specific hardware, and provides notes for each
-            item.
+            Github Profile search engine and allows for profile information
           </p>
         </div>
       </Modal>
     </div>
   )
 }
-export default TicketTracker
+
+export default GithubFinder

@@ -22,20 +22,20 @@ const customStyles = {
   },
 };
 
-const TicketTracker = () => {
+const Discoverware = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const openModal = () => setModalIsOpen(true)
   const closeModal = () => setModalIsOpen(false)
 
   return (
-    <div id='ticket-tracker'>
+    <div id='discoverware'>
       <div className='max-w-md'>
         <img
-          src='../images/projects/ticket-tracker/tracking-home.png'
-          alt='Ticket Tracker website pictures'
+          src='../images/projects/discoverware/discoverware-landing.png'
+          alt='Discoverware website pictures'
           onClick={openModal}
         />
-        <p className='text-center'>Ticket Tracker</p>
+        <p className='text-center'>DiscoverWare</p>
       </div>
 
       <Modal
@@ -45,7 +45,7 @@ const TicketTracker = () => {
       >
         <div className=''>
           <button onClick={closeModal}>X</button>
-          <h3 className='text-center'>Ticket Tracker</h3>
+          <h3 className='text-center'>DiscoverWare</h3>
 
           <Swiper
             slidesPerView={1}
@@ -54,7 +54,7 @@ const TicketTracker = () => {
             loop={true}
             autoplay={{
               delay: 1000,
-              disableOnInteraction: false,
+              disableOnInteraction: true,
             }}
             pagination={{
               clickable: true,
@@ -65,38 +65,33 @@ const TicketTracker = () => {
           >
             <SwiperSlide>
               <img
-                src='../images/projects/ticket-tracker/tracking-home.png'
+                src='../images/projects/discoverware/discoverware-landing.png'
                 alt=''
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src='../images/projects/ticket-tracker/ticket-new.png'
+                src='../images/projects/discoverware/discoverware-profile.png'
                 alt=''
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src='../images/projects/ticket-tracker/my-tickets.png'
-                alt=''
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src='../images/projects/ticket-tracker/ticket-details.png'
+                src='../images/projects/discoverware/discoverware-0auth.png'
                 alt=''
               />
             </SwiperSlide>
           </Swiper>
 
           <p className='pt-10'>
-            Application framework to allow for user to create profile, create
-            help tickets for specific hardware, and provides notes for each
-            item.
+            This app allows a user to locate and save any location they desire,
+            saving said locations will display information about that location.
+            This app requires a user account/log-in that the app will recognize
+            in order to accurately generate saved data.
           </p>
         </div>
       </Modal>
     </div>
   )
 }
-export default TicketTracker
+export default Discoverware

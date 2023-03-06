@@ -17,6 +17,7 @@ import {
 const Skills = () => {
   return (
     <div className='px-8 space-y-10'>
+  
       <div id='skills-container' className='text-5xl font-style: italic'>
         Skills
         <div id='skills-individual' className='text-4xl flex'>
@@ -58,6 +59,7 @@ const Skills = () => {
           <SiSqlite />
         </div>
       </div>
+
     </div>
   )
 }

@@ -12,16 +12,15 @@ import '../../index.css'
 Modal.setAppElement('#root')
 const customStyles = {
   content: {
-    width: '60%',
+    width: '50%',
     top: '50%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    position: 'relative',
   },
-}
+};
 
 const LibraryOfThings = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
@@ -44,14 +43,13 @@ const LibraryOfThings = () => {
         onRequestClose={closeModal}
         style={customStyles}
       >
-        <div className='min-h-full'>
+        <div className=''>
           <button onClick={closeModal}>X</button>
           <h3 className='text-center'>Library of Things</h3>
 
           <Swiper
             slidesPerView={1}
             spaceBetween={90}
-            // autoHeight={true}
             centeredSlides={true}
             loop={true}
             autoplay={{

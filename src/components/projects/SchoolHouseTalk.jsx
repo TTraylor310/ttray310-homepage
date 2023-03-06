@@ -20,22 +20,22 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
   },
-};
+}
 
-const TicketTracker = () => {
+const SchoolHouseTalk = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const openModal = () => setModalIsOpen(true)
   const closeModal = () => setModalIsOpen(false)
 
   return (
-    <div id='ticket-tracker'>
+    <div id='school-house-talk'>
       <div className='max-w-md'>
         <img
-          src='../images/projects/ticket-tracker/tracking-home.png'
-          alt='Ticket Tracker website pictures'
+          src='../images/projects/school-house-talk/psql-server-updated.png'
+          alt='Github Finder website pictures'
           onClick={openModal}
         />
-        <p className='text-center'>Ticket Tracker</p>
+        <p className='text-center'>School House Talk</p>
       </div>
 
       <Modal
@@ -45,7 +45,7 @@ const TicketTracker = () => {
       >
         <div className=''>
           <button onClick={closeModal}>X</button>
-          <h3 className='text-center'>Ticket Tracker</h3>
+          <h3 className='text-center'>School House Talk</h3>
 
           <Swiper
             slidesPerView={1}
@@ -54,7 +54,7 @@ const TicketTracker = () => {
             loop={true}
             autoplay={{
               delay: 1000,
-              disableOnInteraction: false,
+              disableOnInteraction: true,
             }}
             pagination={{
               clickable: true,
@@ -65,38 +65,45 @@ const TicketTracker = () => {
           >
             <SwiperSlide>
               <img
-                src='../images/projects/ticket-tracker/tracking-home.png'
+                src='../images/projects/school-house-talk/psql-server-updated.png'
                 alt=''
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src='../images/projects/ticket-tracker/ticket-new.png'
+                src='../images/projects/school-house-talk/psql-server-and-table.png'
                 alt=''
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src='../images/projects/ticket-tracker/my-tickets.png'
+                src='../images/projects/school-house-talk/sockets-connected-starting.png'
                 alt=''
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src='../images/projects/ticket-tracker/ticket-details.png'
+                src='../images/projects/school-house-talk/sockets-connected-sports-joined.png'
+                alt=''
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src='../images/projects/school-house-talk/sockets-connected-deleteEvent.png'
                 alt=''
               />
             </SwiperSlide>
           </Swiper>
 
           <p className='pt-10'>
-            Application framework to allow for user to create profile, create
-            help tickets for specific hardware, and provides notes for each
-            item.
+            School House Talk will act as a single source of truth for
+            communication and information about school activities and events
+            between faculty and parents. Coach and Admin have access to create
+            new events, modify existing ones, and delete an event all together.
           </p>
         </div>
       </Modal>
     </div>
   )
 }
-export default TicketTracker
+export default SchoolHouseTalk
