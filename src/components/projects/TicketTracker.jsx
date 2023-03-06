@@ -19,24 +19,24 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    position: 'relative',
+    // position: 'relative',
   },
 }
 
-const LibraryOfThings = () => {
+const TicketTracker = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const openModal = () => setModalIsOpen(true)
   const closeModal = () => setModalIsOpen(false)
 
   return (
-    <div id='library-of-things'>
+    <div id='ticket-tracker'>
       <div className='max-w-md'>
         <img
-          src='../images/projects/library-of-things/landing-page.png'
-          alt='Library of Things website pictures'
+          src='../images/projects/ticket-tracker/tracking-home.png'
+          alt='Ticket Tracker website pictures'
           onClick={openModal}
         />
-        <p className='text-center'>Library of Things</p>
+        <p className='text-center'>Ticket Tracker</p>
       </div>
 
       <Modal
@@ -46,7 +46,7 @@ const LibraryOfThings = () => {
       >
         <div className='min-h-full'>
           <button onClick={closeModal}>X</button>
-          <h3 className='text-center'>Library of Things</h3>
+          <h3 className='text-center'>Ticket Tracker</h3>
 
           <Swiper
             slidesPerView={1}
@@ -56,7 +56,7 @@ const LibraryOfThings = () => {
             loop={true}
             autoplay={{
               delay: 1000,
-              disableOnInteraction: true,
+              disableOnInteraction: false,
             }}
             pagination={{
               clickable: true,
@@ -67,32 +67,38 @@ const LibraryOfThings = () => {
           >
             <SwiperSlide>
               <img
-                src='../images/projects/library-of-things/landing-page.png'
+                src='../images/projects/ticket-tracker/tracking-home.png'
                 alt=''
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src='../images/projects/library-of-things/profile-page.png'
+                src='../images/projects/ticket-tracker/ticket-new.png'
                 alt=''
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src='../images/projects/library-of-things/browsing-page.png'
+                src='../images/projects/ticket-tracker/my-tickets.png'
+                alt=''
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src='../images/projects/ticket-tracker/ticket-details.png'
                 alt=''
               />
             </SwiperSlide>
           </Swiper>
 
           <p className='pt-10'>
-            Find items in your community from real people. Share your own items
-            that you think someone else may find useful. Use it to share your
-            interests and meet new people.
+            Application framework to allow for user to create profile, create
+            help tickets for specific hardware, and provides notes for each
+            item.
           </p>
         </div>
       </Modal>
     </div>
   )
 }
-export default LibraryOfThings
+export default TicketTracker
