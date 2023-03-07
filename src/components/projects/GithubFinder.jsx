@@ -28,7 +28,7 @@ const GithubFinder = () => {
   const closeModal = () => setModalIsOpen(false)
 
   return (
-    <div id='github-finder'>
+    <div id='github-finder' className='project-ind'>
       <div className='max-w-md'>
         <img
           src='../images/projects/github-finder/landing-page.png'

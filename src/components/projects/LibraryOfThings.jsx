@@ -28,7 +28,7 @@ const LibraryOfThings = () => {
   const closeModal = () => setModalIsOpen(false)
 
   return (
-    <div id='library-of-things'>
+    <div id='library-of-things' className='project-ind'>
       <div className='max-w-md'>
         <img
           src='../images/projects/library-of-things/landing-page.png'

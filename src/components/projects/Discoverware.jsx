@@ -28,7 +28,7 @@ const Discoverware = () => {
   const closeModal = () => setModalIsOpen(false)
 
   return (
-    <div id='discoverware'>
+    <div id='discoverware' className='project-ind'>
       <div className='max-w-md'>
         <img
           src='../images/projects/discoverware/discoverware-landing.png'

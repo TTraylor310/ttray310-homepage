@@ -22,20 +22,20 @@ const customStyles = {
   },
 }
 
-const TailwindcssRemake = () => {
+const MoodGen = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const openModal = () => setModalIsOpen(true)
   const closeModal = () => setModalIsOpen(false)
 
   return (
-    <div id='tailwindcss-remake' className='project-ind'>
+    <div id='mood-gen' className='project-ind'>
       <div className='max-w-md'>
         <img
-          src='../images/projects/tailwindcss-remake/image-gallery.png'
-          alt='Tailwind CSS website pictures'
+          src='../images/projects/mood-gen/mood-gen-homepage.png'
+          alt='Mood website pictures'
           onClick={openModal}
         />
-        <p className='text-center'>TailwindCss Remakes</p>
+        <p className='text-center'>Mood Generator</p>
       </div>
 
       <Modal
@@ -45,7 +45,7 @@ const TailwindcssRemake = () => {
       >
         <div className=''>
           <button onClick={closeModal}>X</button>
-          <h3 className='text-center'>TailwindCss Remakes</h3>
+          <h3 className='text-center'>Mood Generator</h3>
 
           <Swiper
             slidesPerView={1}
@@ -65,60 +65,25 @@ const TailwindcssRemake = () => {
           >
             <SwiperSlide>
               <img
-                src='../images/projects/tailwindcss-remake/image-gallery.png'
+                src='../images/projects/mood-gen/mood-gen-homepage.png'
                 alt=''
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src='../images/projects/tailwindcss-remake/clipboard-top.png'
-                alt=''
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src='../images/projects/tailwindcss-remake/email-subscribe.png'
-                alt=''
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src='../images/projects/tailwindcss-remake/login-modal.png'
-                alt=''
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src='../images/projects/tailwindcss-remake/loopstudios.png'
-                alt=''
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src='../images/projects/tailwindcss-remake/pricing-cards.png'
-                alt=''
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src='../images/projects/tailwindcss-remake/product-modal.png'
-                alt=''
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src='../images/projects/tailwindcss-remake/shortly-top.png'
+                src='../images/projects/mood-gen/mood-gen-results.png'
                 alt=''
               />
             </SwiperSlide>
           </Swiper>
 
           <p className='pt-10'>
-            Recreated tailwindcss projects with templates. Showcasing dynamic pages and CSS styling.
+            Project with form to suggest Music, Movies, and Links to additional
+            resources.
           </p>
         </div>
       </Modal>
     </div>
   )
 }
-export default TailwindcssRemake
+export default MoodGen

@@ -28,7 +28,7 @@ const SchoolHouseTalk = () => {
   const closeModal = () => setModalIsOpen(false)
 
   return (
-    <div id='school-house-talk'>
+    <div id='school-house-talk' className='project-ind'>
       <div className='max-w-md'>
         <img
           src='../images/projects/school-house-talk/psql-server-updated.png'

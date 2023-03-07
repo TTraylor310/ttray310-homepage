@@ -28,7 +28,7 @@ const TicketTracker = () => {
   const closeModal = () => setModalIsOpen(false)
 
   return (
-    <div id='ticket-tracker'>
+    <div id='ticket-tracker' className='project-ind'>
       <div className='max-w-md'>
         <img
           src='../images/projects/ticket-tracker/tracking-home.png'
