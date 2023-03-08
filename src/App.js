@@ -12,7 +12,7 @@ import './index.css'
 
 const App = () => {
   return (
-    <div className='bg-violet-200'>
+    <div className='bg-grossTh'>
 
       <Router>
 
