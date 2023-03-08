@@ -10,6 +10,7 @@ module.exports = {
         lightBlue: '#2D61DD',
         lighterBlack: '#1F1F1F',
         skillBG: '#f7f4f3',
+        grossTh: '#E1CD61',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
