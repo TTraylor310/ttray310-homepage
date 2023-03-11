@@ -23,7 +23,7 @@ const App = () => {
 
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/work-history' element={<WorkHistory />} />
+          {/* <Route path='/work-history' element={<WorkHistory />} /> */}
         </Routes>
 
         <div className="min-w-max px-3 pt-3 mb-0 ">
