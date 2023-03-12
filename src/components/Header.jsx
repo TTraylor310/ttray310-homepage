@@ -6,9 +6,9 @@ const Header = () => {
       <Link to={'/'}>
         <span className='text-orange-500 font-bold'>Home</span>
       </Link>
-      <Link to={'/work-history'}>
+      {/* <Link to={'/work-history'}> */}
         <span className='text-green-400 font-bold'>Work History</span>
-      </Link>
+      {/* </Link> */}
     </div>
   )
 }
