@@ -5,7 +5,7 @@ import Skills2 from '../components/Skills2'
 import WhoAmI from '../components/WhoAmI'
 import WorkHistory from '../components/WorkHistory'
 
-
+// remember to clean up the work history and add shortcut links
 const Home = () => {
   return (
     <div>
