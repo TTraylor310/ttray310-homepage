@@ -6,6 +6,7 @@ import WhoAmI from '../components/WhoAmI'
 import WorkHistory from '../components/WorkHistory'
 
 // figure out the quick links
+// and list the different links in the header, change for size of screen
 // remember to clean up the work history and add shortcut links
 const Home = () => {
   return (
