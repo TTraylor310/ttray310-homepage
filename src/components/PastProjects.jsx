@@ -9,6 +9,7 @@ import MoodGen from './projects/MoodGen'
 const PastProjects = () => {
 
   // expand on each card to include the languages used and icon
+  // also check the details for each card..
 
   return (
     <div id='past-projects-container' className='p-15'>
