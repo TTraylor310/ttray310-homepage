@@ -11,6 +11,7 @@ const PastProjects = () => {
   // expand on each card to include the languages used and icon
   // also check the details for each card..
   // add styling for hover on the projects and reactions
+  // and think or ways to style the page so comments on side
 
   return (
     <div id='past-projects-container' className='p-15'>
