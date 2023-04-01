@@ -12,6 +12,7 @@ const PastProjects = () => {
   // also check the details for each card..
   // add styling for hover on the projects and reactions
   // and think or ways to style the page so comments on side
+  // cross over and remember to write json data for reuse
 
   return (
     <div id='past-projects-container' className='p-15'>
